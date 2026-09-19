@@ -1,0 +1,33 @@
+# Build do Maven (inclui o scanner gerado pelo JFlex em
+# target/generated-sources/jflex/ — nunca versionar codigo gerado)
+target/
+*.class
+
+# Backup de editor
+*~
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+
+### Eclipse ###
+.settings/
+.classpath
+.project
+.apt_generated
+.factorypath
+bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
