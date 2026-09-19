@@ -219,6 +219,17 @@ Seções do arquivo, nesta ordem:
 
 Cada um edita **apenas** a sua seção, demarcada por comentário no arquivo.
 
+### Duas armadilhas do JFlex nessas seções
+
+- **O estado do comentário tem que ser `%xstate COMMENT`, não `%state COMMENT`.** Em JFlex, `%state`
+  declara um estado *inclusivo*: as regras sem prefixo de estado continuam valendo dentro dele, e a
+  palavra `class` escrita dentro de um comentário viraria token. `%xstate` declara um estado
+  *exclusivo*, onde só valem as regras prefixadas com `<COMMENT>`.
+- **Comentários no próprio `.flex` aninham.** Escrever a sequência de abertura de comentário de bloco
+  dentro de um comentário do `.flex` abre um nível que o `*/` seguinte só fecha pela metade, e o
+  JFlex falha com `Unexpected end of file in comment`. Descreva em palavras em vez de escrever a
+  sequência literal.
+
 ---
 
 ## 6. Compatibilidade com a fase 2 (Java CUP)

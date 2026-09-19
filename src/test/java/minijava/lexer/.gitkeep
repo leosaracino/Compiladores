@@ -1,8 +1,0 @@
-Testes unitarios (JUnit 5), um arquivo por modulo:
-  LexerTestSupport.java        - helper compartilhado (Leonardo)
-  KeywordsOperatorsTest.java   - Leonardo
-  IntegrationTest.java         - Leonardo
-  LiteralsIdentifiersTest.java - Leon
-  CommentsWhitespaceTest.java  - Gustavo
-  LexicalErrorTest.java        - Gustavo
-Apagar este arquivo quando o primeiro teste existir.

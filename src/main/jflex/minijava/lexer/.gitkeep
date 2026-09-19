@@ -1,4 +1,0 @@
-Aqui vai o MiniJava.flex (item 3 da parte do Leonardo: esqueleto com as 8 secoes demarcadas).
-O jflex-maven-plugin le todo .flex desta pasta na fase generate-sources e gera o scanner em
-target/generated-sources/jflex/ - codigo gerado nao e versionado.
-Apagar este arquivo quando o MiniJava.flex existir.
